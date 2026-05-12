@@ -1,0 +1,22 @@
+$date
+	Tue May 12 15:07:54 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module calib_tb $end
+$var reg 1 ! test_wire $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+$end
+#10
+1!
+#20
+0!
+#30

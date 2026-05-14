@@ -1,0 +1,19 @@
+digraph "mux_always" {
+label="mux_always";
+rankdir="LR";
+remincross=true;
+n3 [ shape=octagon, label="y", color="black", fontcolor="black"];
+n4 [ shape=octagon, label="select", color="black", fontcolor="black"];
+n5 [ shape=octagon, label="d", color="black", fontcolor="black"];
+n6 [ shape=octagon, label="c", color="black", fontcolor="black"];
+n7 [ shape=octagon, label="b", color="black", fontcolor="black"];
+n8 [ shape=octagon, label="a", color="black", fontcolor="black"];
+{ rank="source"; n4; n5; n6; n7; n8;}
+{ rank="sink"; n3;}
+p0 [shape=box, style=rounded, label="PROC $1\nmux_always.sv:6.16-6.16", ];
+p0:e -> n3:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n4:e -> p0:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n5:e -> p0:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n7:e -> p0:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+n8:e -> p0:w [color="black", fontcolor="black", style="setlinewidth(3)", label=""];
+}

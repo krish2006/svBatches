@@ -1,0 +1,59 @@
+$date
+	Thu May 14 19:41:06 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_mux_always $end
+$var wire 3 ! test_y [2:0] $end
+$var reg 3 " test_a [2:0] $end
+$var reg 3 # test_b [2:0] $end
+$var reg 3 $ test_c [2:0] $end
+$var reg 3 % test_d [2:0] $end
+$var reg 2 & test_select [1:0] $end
+$scope module dut $end
+$var wire 3 ' a [2:0] $end
+$var wire 3 ( b [2:0] $end
+$var wire 3 ) c [2:0] $end
+$var wire 3 * d [2:0] $end
+$var wire 2 + select [1:0] $end
+$var reg 3 , y [2:0] $end
+$scope begin mux_implementation $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b100 ,
+b0 +
+b1 *
+b11 )
+b101 (
+b100 '
+b0 &
+b1 %
+b11 $
+b101 #
+b100 "
+b100 !
+$end
+#10000
+b101 !
+b101 ,
+b1 &
+b1 +
+#20000
+bx !
+bx ,
+b10 &
+b10 +
+#30000
+b1 !
+b1 ,
+b11 &
+b11 +
+#40000
